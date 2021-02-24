@@ -3,7 +3,7 @@ class Earning < ApplicationRecord
     def calculate_taxes 
         @earnings = Earning.all    
           @earnings.map do |e|
-           return  e.amount                                           
+             e.amount                                           
             if e.amount < 9999
             puts "Congrats, you dont have any taxes to pay" 
             elsif e.amount.between?(9999, 19999)

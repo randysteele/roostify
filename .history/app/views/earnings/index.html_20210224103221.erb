@@ -1,0 +1,5 @@
+<%= @earnings.each do |e| %>
+<li>Income: <%=e.amount%> </li>
+ <% end %>
+
+<%= if @earnings.amount.between?(0,9999) '#{@bracket_one}' %>

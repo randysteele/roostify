@@ -1,0 +1,8 @@
+<h2> Calculate your Income Taxes </h2>
+
+<%= form_for(@earnings) do |f|%>
+<%= f.label "Annual Salary" %>
+<%= f.text_field :amount %>
+
+<input type="submit" value="Calculate" >
+<% end %>

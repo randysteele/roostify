@@ -1,21 +1,21 @@
 class EarningsController < ApplicationController
 
     def index
-        @earnings = Earning.all
-       return  @earnings
+        @earnings = Earning.all 
     end
 
     def new 
-        @earnings = Earning.new
-        #  if @earnings > 10000
-        #      alert("Congrats you are tax free")
-        # elsif @earnings.to_i.between?(10001, 19999) 
-        #     puts "Your Income Tax is "
-        # elsif @earnings.to_i.between?(20000, 49999) 
-        #     puts "Your Income Tax is "
-        # elsif @earning.to_i < 50000 
-        #     puts "Your Income Tax is "
-        #  end       
+        @earnings = Earning.new.to_i
+        if @earnings > 10000
+            puts "Congrats you are tax free"
+        elsif @earnings.to_i.between?(10001, 19999) 
+            puts "Your Income Tax is "
+        elsif @earnings.to_i.between?(20000, 49999) 
+            puts "Your Income Tax is "
+        elsif @earning.to_i < 50000 
+            puts "Your Income Tax is "
+        end
+       
     end    
 
     def create 

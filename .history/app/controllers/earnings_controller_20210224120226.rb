@@ -1,8 +1,7 @@
 class EarningsController < ApplicationController
 
     def index
-        @earnings = Earning.all
-       return  @earnings
+        @earnings = Earning.all 
     end
 
     def new 
@@ -15,7 +14,7 @@ class EarningsController < ApplicationController
         #     puts "Your Income Tax is "
         # elsif @earning.to_i < 50000 
         #     puts "Your Income Tax is "
-        #  end       
+         end       
     end    
 
     def create 

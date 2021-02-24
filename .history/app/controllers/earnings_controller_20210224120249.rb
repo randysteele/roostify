@@ -1,8 +1,7 @@
 class EarningsController < ApplicationController
 
     def index
-        @earnings = Earning.all
-       return  @earnings
+        @earnings = Earning.all 
     end
 
     def new 
