@@ -10,13 +10,28 @@ class Earning < ApplicationRecord
             elsif e.amount.between?(10000, 19999)                    
                  @tax = e.amount * 0.10           
             elsif e.amount.between?(19999, 50000)                 
-                 @tax = e.amount * 0.20 
+                 @tax = @earnings * 0.20 
             else e.amount > 50000  
                  @tax = e.amount * 0.30                    
             end                              
           end
           return @tax 
     end
+
+#    def bracket_one 
+#     @earnings = Earning.all 
+#      @earnings * 0.10 
+#    end
+
+#    def bracket_two
+#     @earnings = Earning.all 
+#      @earnings * 0.20
+#    end
+
+#    def bracket_three
+#     @earnings = Earning.all 
+#      @earnings * 0.30
+#    end
 
 
 
