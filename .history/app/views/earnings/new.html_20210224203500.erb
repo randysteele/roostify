@@ -7,8 +7,10 @@
 <input type="submit" value="Calculate" >
 <% end %>
 
-<br>Income: $<%= @last.amount %>
 
+
+<br>Income<%= @last.amount %>
+<% @calc_taxes(amount)%>
 
 
 

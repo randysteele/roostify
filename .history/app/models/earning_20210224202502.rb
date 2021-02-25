@@ -1,4 +1,10 @@
-class Earning < ApplicationRecord   
+class Earning < ApplicationRecord
+
+    
+    #swap if out with a case statement
+
+    #functional that receives an amount as an argument and spits  out the tax amount
+    #puts a string says the amount and the tax amout
 
     def calc_taxes(amount)
         case amount
