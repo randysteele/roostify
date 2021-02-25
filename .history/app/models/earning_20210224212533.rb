@@ -11,6 +11,6 @@ class Earning < ApplicationRecord
         when amount > 50000 
             return amount * 0.30 
         end
-        byebug
+        
     end
 end

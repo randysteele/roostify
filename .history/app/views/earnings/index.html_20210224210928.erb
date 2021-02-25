@@ -1,0 +1,3 @@
+<br><%= @earnings.each do |e| %>
+<li>Income: $<%=e.amount, e.calc_taxes(e.amount) %> Income Tax Amount: $<%=e.calc_taxes(e.amount) %> </li>
+ <% end %>

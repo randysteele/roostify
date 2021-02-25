@@ -2,7 +2,7 @@ class Earning < ApplicationRecord
 
     def calc_taxes(amount)
         case amount
-        when amount.between?(0, 9999)
+        when amount > 10000
             return amount
         when amount.between?(10000, 19999)
             return amount * 0.10
