@@ -1,13 +1,13 @@
 class EarningsController < ApplicationController
 
     def index
-        @earnings = Earning.all    
-        # @last = Earning.last    
+        @earnings = Earning.all  
+     #   amount = @earnings.amount      
     end
 
     def new 
         @earnings = Earning.new
-        # @last = Earning.last 
+        @last = Earning.last 
     end    
 
     def create 

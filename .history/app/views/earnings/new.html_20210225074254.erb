@@ -1,6 +1,6 @@
 <h2> Calculate your Income Taxes </h2>
 
-<%= form_for(@earnings) do |f|%>
+<%= form_for(@last) do |f|%>
 <%= f.label "Annual Salary" %>
 <%= f.text_field :amount %>
 
@@ -8,3 +8,4 @@
 
 <% end %>
 
+<br>Income: $<%= @last.amount %><br><br> Income Taxes: $<%= @last.calculate_taxes%>
